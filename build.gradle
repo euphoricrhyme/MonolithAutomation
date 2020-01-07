@@ -1,0 +1,16 @@
+apply plugin: 'java'
+
+project.ext {
+    cucumberVersion = '5.0.0-RC1'
+}
+
+dependencies {
+    testImplementation "com.github.tomakehurst:wiremock-jre8:2.25.1"
+    testImplementation 'io.cucumber:cucumber-java:' + cucumberVersion
+    testImplementation 'io.cucumber:cucumber-junit:' + cucumberVersion
+    implementation 'org.jetbrains:annotations:15.0'
+}
+
+repositories {
+    mavenCentral()
+}
