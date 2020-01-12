@@ -5,8 +5,8 @@ import io.cucumber.junit.Cucumber;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(plugin = {"pretty"},
-        features = "src/test/resources/monolith/api/invoices/",
-        glue = "src/test/java/monolith/api/invoices/StepDefinitions")
+@CucumberOptions(
+        features = "src/test/resources/Features",
+        glue = "src/test/java/monolith/api/stepDef")
 public class RunCucumberTest {
 }
